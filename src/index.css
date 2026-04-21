@@ -1,0 +1,9 @@
+/* Minimal CSS to avoid 404 and provide Tailwind baseline */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: inherit;
+}

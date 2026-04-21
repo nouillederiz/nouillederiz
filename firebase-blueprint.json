@@ -1,0 +1,26 @@
+{
+  "entities": {
+    "ArticleData": {
+      "title": "Article Details",
+      "description": "Details for a specific marketplace listing",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "price": { "type": "string" },
+        "images": { 
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "createdAt": { "type": "number" }
+      },
+      "required": ["title", "price", "images"]
+    }
+  },
+  "firestore": {
+    "/articles/{articleId}": {
+      "schema": "ArticleData",
+      "description": "Collection of all duplicated marketplace pages"
+    }
+  }
+}
